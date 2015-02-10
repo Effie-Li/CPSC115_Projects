@@ -4,9 +4,9 @@ Interesting assignments I did when I took cpsc115 @Trinity college
 Contains:
 
 115 - project1:
-Caesar Cipher
+Caesar Cipher.
 Language: Python
 
 115 - project2:
-BlackJack Game
+BlackJack Game.
 Language: Java
