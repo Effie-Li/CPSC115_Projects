@@ -1,0 +1,18 @@
+from cipher import Cipher
+
+class SubstitutionCipher(Cipher):
+    '''represents a simple substituiont cipher with a keyword'''
+    
+    def __init__(self, keyword = '', type = 'SimpleSubstitution'):
+        self.keyword = keyword
+        self.type = type
+        cipher_alphabet = keyword + self.plain_alphabet
+        c_a = cipher_alphabet
+        i = len(c_a) - 1
+        while i > 0:
+            ch = c_a[i]
+            check = c_a[:i] + c_a[i+1:]
+            if ch in check:
+                c_a = check
+            i -= 1
+        self.cipher_alphabet = c_a
